@@ -1,0 +1,83 @@
+body{
+    background-color:#011329;
+    color: white;
+    font-family: 'Nunito';
+    padding: .75em 1.5em;
+}
+main{
+  max-width:30em;
+  margin: 0 auto;
+}
+button{
+  outline:none;
+}
+
+  /* utilities */
+  .hide{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  .flash {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+  /* progress bar */
+  #waterboy_progress_container{
+    background-color: white;
+    height: 3em;
+    width:100%;
+    padding: .33em;
+  }
+  #waterboy_progress_indicator{
+    background-color: #0197F6;
+    height: 100%;
+    width: 100%;
+    transition: width .6s;
+  }
+  
+  /* controls */
+  #waterboy_control_start,
+  #waterboy_control_stop,
+  #waterboy_control_info{
+    background-color: #ddd;
+    border: 2px solid #eee;
+    height: 2em;
+    width: 6em;
+    margin: .66em .5em 0 0;
+    transition: background-color .15s;
+  }
+  #waterboy_control_countdown{
+    background-color: #ddd;
+    border: 2px solid #eee;
+    height: 2em;
+    width: 12em;
+    margin: .66em 0 0 0;
+    transition: background-color .15s;
+  }
+  #waterboy_control_start:hover,
+  #waterboy_control_stop:hover,
+  #waterboy_control_info:hover,
+  #waterboy_control_countdown:hover{
+    background-color: white;
+    border: 2px solid #fff;
+  }
+  #waterboy_controls{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+  }
+

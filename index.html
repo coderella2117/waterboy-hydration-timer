@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>The Waterboy: Hydration Reminder</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Tachyons CSS -->
+    <link rel="stylesheet" href="css/tachyons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  
+  <body class="f4-l f5-m f6">
+
+  
+    <main>
+      <h1 class="lh-title tc">The Waterboy</h1>
+      <p class="lh-copy tc mb3">A regular audio reminder to freshen up</p>
+      <img src="assets/bobby-bushay.jpg" alt="Waterboy, Bobby Bushay" class="w5-l w4-m w3 h-auto db center mb3 ba bw2 b--white br-100">
+
+      <div id="waterboy_progress_container" class="mb1">
+          <div id="waterboy_progress_indicator"></div>
+      </div>
+      <div id="waterboy_controls">
+          <button id="waterboy_control_start">Start</button>
+          <button id="waterboy_control_stop">Stop</button>
+          <button id="waterboy_control_info">Info</button><br>
+          <button id="waterboy_control_countdown"><span id="waterboy_countdown_text">0:0</span></button>
+      </div>
+
+      <audio id="waterboy_audio" src="assets/audio-cleancoldh2o.wav" type="audio/wav" controls class="hide"></audio>
+
+    </main>
+
+    <script src="js/waterboy.js"></script>
+
+  </body>
+
+</html>
